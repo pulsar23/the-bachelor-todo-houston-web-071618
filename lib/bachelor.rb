@@ -1,19 +1,23 @@
 def get_first_name_of_season_winner(data, season)
-  # code here
+  # Returns the first name of the season's winner 
+  # Use string manipulation to get first name 
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  # Returns the name of the woman who has occupation
 end
 
 def count_contestants_by_hometown(data, hometown)
-  # code here
+  # Returns a counter of the number of contestants from hometown
 end
 
 def get_occupation(data, hometown)
-  # code here
+  # Returns the occupation of the first contestant who hails 
+  # from that hometown
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  # Returns the average age of all contestants for that season
+  # NOTE: ages are listed as STRINGS -> convert Strings to Numbers
+  # Change Numbers to FLOAT values when doing division
 end
