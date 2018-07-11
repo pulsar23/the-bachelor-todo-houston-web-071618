@@ -5,21 +5,21 @@ def get_first_name_of_season_winner(data, season)
   season_winner = ""
   season_winner_fname = ""
   data_key_array = data.keys
-  puts "data keys = #{data_key_array}"
-  puts "############################################"
+  #puts "data keys = #{data_key_array}"
+  #puts "############################################"
   
   
   data[season].each do | key_name, key_value |
-    puts "==================================="
-    puts "key_name = #{key_name}"
+    #puts "==================================="
+    #puts "key_name = #{key_name}"
     if key_name.has_value?("Winner")
       key_name.each do | key_name2, key_value2|
         if key_name2 == "name"
           season_winner = key_value2
-          puts "===> season winner = #{season_winner}"
+     #     puts "===> season winner = #{season_winner}"
         end #if
-        puts "key_name2 = #{key_name2}"
-        puts "key_value2 = #{key_value2}"
+      #  puts "key_name2 = #{key_name2}"
+      #  puts "key_value2 = #{key_value2}"
       end #do key_name.each
     end #if
   end #data[season].each do
