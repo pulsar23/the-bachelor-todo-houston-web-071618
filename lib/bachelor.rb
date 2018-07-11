@@ -1,6 +1,8 @@
 def get_first_name_of_season_winner(data, season)
   # Returns the first name of the season's winner 
-  # Use string manipulation to get first name 
+  # Use string manipulation to get first name
+  data_keys = data.keys
+  puts "data keys = #{data_keys}"
 end
 
 def get_contestant_name(data, occupation)
