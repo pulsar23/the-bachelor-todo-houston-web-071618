@@ -105,6 +105,7 @@ def get_average_age_for_season(data, season)
       end #do key_name.each
   end #data[season].each do
  puts "age array = #{age_array}"
- num_array = age_array.map{ |x| x.to_f
+ num_array = age_array.map{ |x| x.to_f}
+ puts "num_array = #{num_array}"
   
 end #get_average_age_for_season
