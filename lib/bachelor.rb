@@ -70,6 +70,7 @@ def get_occupation(data, hometown)
   # Returns the occupation of the first contestant who hails 
   # from that hometown
   
+  
 end
 
 def get_average_age_for_season(data, season)
