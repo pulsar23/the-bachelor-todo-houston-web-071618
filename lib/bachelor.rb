@@ -52,20 +52,17 @@ def count_contestants_by_hometown(data, hometown)
   # Returns a counter of the number of contestants from hometown
   
   data_keys = data.keys
+  counter = 0 
   
   data_keys.each do |season|
     data[season].each do | key_name, key_value |
     if key_name.has_value?(hometown)
-      key_name.each do | key_name2, key_value2|
-        if key_name2 == "name"
-          contestant_name = key_value2
-        end #if
-      end #do key_name.each
+       counter+=1 
     end #if
   end #data[season].each do
  end #data_keys.each do
   
-contestant_name
+counter
   
 end
 
