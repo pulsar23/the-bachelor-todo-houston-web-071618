@@ -96,16 +96,23 @@ def get_average_age_for_season(data, season)
   
   data_keys = data.keys
   age_array = []
+  sum = 0
+  count = 0
   
     data[season].each do | key_name, key_value |
       key_name.each do | key_name2, key_value2|
         if key_name2 == "age"
           age_array << key_value2
+          count+=1 
         end #if
       end #do key_name.each
-  end #data[season].each do
- puts "age array = #{age_array}"
- num_array = age_array.map{ |x| x.to_f}
- puts "num_array = #{num_array}"
+    end #data[season].each do
+    
+   #Convert array from strings to floats
+   num_array = age_array.map{ |x| x.to_f}
+   num_array.each do |y|
+     sum = sum + y
+   end
+   average = sum/count
   
 end #get_average_age_for_season
