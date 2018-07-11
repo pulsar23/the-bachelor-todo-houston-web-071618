@@ -16,13 +16,14 @@ def get_first_name_of_season_winner(data, season)
       key_name.each do | key_name2, key_value2|
         if key_name2 == "name"
           season_winner = key_value2
-        end
+        end #if
         puts "key_name2 = #{key_name2}"
         puts "key_value2 = #{key_value2}"
-    end
-  end
-  
-end
+      end #do key_name.each
+    end #if
+  end #data[season].each do
+season_winner
+end #end get_first_name_of_season_winner
 
 def get_contestant_name(data, occupation)
   # Returns the name of the woman who has occupation
