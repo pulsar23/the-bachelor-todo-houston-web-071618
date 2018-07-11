@@ -64,7 +64,7 @@ def count_contestants_by_hometown(data, hometown)
   
 counter
   
-end
+end #end count_contestants_by_hometown
 
 def get_occupation(data, hometown)
   # Returns the occupation of the first contestant who hails 
