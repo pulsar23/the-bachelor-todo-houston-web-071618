@@ -31,7 +31,22 @@ end #end get_first_name_of_season_winner
 
 def get_contestant_name(data, occupation)
   # Returns the name of the woman who has occupation
+    data[season].each do | key_name, key_value |
+    puts "==================================="
+    puts "key_name = #{key_name}"
+    if key_name.has_value?(occupation)
+      key_name.each do | key_name2, key_value2|
+        if key_name2 == "name"
+          contestant_name = key_value2
+          puts "===> name w/occupation = #{contestant_name}"
+        end #if
+        puts "key_name2 = #{key_name2}"
+        puts "key_value2 = #{key_value2}"
+      end #do key_name.each
+    end #if
+  end #data[season].each do
   
+contestant_name
 end
 
 def count_contestants_by_hometown(data, hometown)
