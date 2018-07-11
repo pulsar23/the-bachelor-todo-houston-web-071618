@@ -12,6 +12,7 @@ def get_first_name_of_season_winner(data, season)
   data[season].each do | key_name, key_value |
     puts "==================================="
     puts "key_name = #{key_name}"
+    if key_name
     key_name.each do | key_name2, key_value2|
       if key_name2 == "status" && key_value2 == "winner"
         season_winner = contestant_name
