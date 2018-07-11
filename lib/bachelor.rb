@@ -1,9 +1,13 @@
 def get_first_name_of_season_winner(data, season)
   # Returns the first name of the season's winner 
   # Use string manipulation to get first name
+  #----------------------------------------------
+  season_winner = ""
+  contestant_name = ""
   data_key_array = data.keys
   puts "data keys = #{data_key_array}"
   puts "############################################"
+  
   
   data[season].each do | key_name, key_value |
     puts "==================================="
