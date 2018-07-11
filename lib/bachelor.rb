@@ -34,6 +34,7 @@ def get_contestant_name(data, occupation)
   data_keys = data.keys
   puts "data_keys = #{data_keys}"
   contestant_name = ""
+  data_keys.each do |season|
     data[season].each do | key_name, key_value |
     puts "==================================="
     puts "key_name = #{key_name}"
@@ -48,6 +49,7 @@ def get_contestant_name(data, occupation)
       end #do key_name.each
     end #if
   end #data[season].each do
+ end #data_keys.each do
   
 contestant_name
 end
