@@ -33,7 +33,7 @@ def get_contestant_name(data, occupation)
   # Returns the name of the woman who has occupation
   
   contestant_name = ""
-    data[season].each do | key_name, key_value |
+    data.each do | key_name, key_value |
     puts "==================================="
     puts "key_name = #{key_name}"
     if key_name.has_value?(occupation)
