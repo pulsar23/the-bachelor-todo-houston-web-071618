@@ -70,6 +70,22 @@ def get_occupation(data, hometown)
   # Returns the occupation of the first contestant who hails 
   # from that hometown
   
+  data_keys = data.keys
+  c_occupation = ""
+  data_keys.each do |season|
+    data[season].each do | key_name, key_value |
+    if key_name.has_value?(hometown)
+      key_name.each do | key_name2, key_value2|
+        if key_name2 == "occupation"
+          c_occupation = key_value2
+          return c_occupation
+        end #if
+      end #do key_name.each
+    end #if
+  end #data[season].each do
+ end #data_keys.each do
+  
+c_occupation
   
 end
 
