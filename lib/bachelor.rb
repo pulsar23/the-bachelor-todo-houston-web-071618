@@ -97,16 +97,13 @@ def get_average_age_for_season(data, season)
   data_keys = data.keys
   age_array = []
   
-  data_keys.each do |season|
     data[season].each do | key_name, key_value |
       key_name.each do | key_name2, key_value2|
         if key_name2 == "age"
-          c_occupation = key_value2
-          return c_occupation
+          age_array << key_value2
         end #if
       end #do key_name.each
   end #data[season].each do
- end #data_keys.each do
   
   
 end #get_average_age_for_season
