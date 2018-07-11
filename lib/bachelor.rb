@@ -24,8 +24,8 @@ def get_first_name_of_season_winner(data, season)
     end #if
   end #data[season].each do
   
-season_winner
-season_winner_fname = 
+split_string = season_winner.split(" ")
+season_winner_fname = split_string[0]
 
 end #end get_first_name_of_season_winner
 
