@@ -36,8 +36,8 @@ def get_contestant_name(data, occupation)
     data.each do | key_name, key_value |
     puts "==================================="
     puts "key_name = #{key_name}"
-    if key_value.has_value?(occupation)
-      key_value.each do | key_name2, key_value2|
+    if key_value[i].has_value?(occupation)
+      key_value[i].each do | key_name2, key_value2|
         if key_name2 == "name"
           contestant_name = key_value2
           puts "===> name w/occupation = #{contestant_name}"
