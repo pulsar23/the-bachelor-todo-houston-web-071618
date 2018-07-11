@@ -5,7 +5,7 @@ def get_first_name_of_season_winner(data, season)
   puts "data keys = #{data_key_array}"
   
   data.each do | key_name, key_value |
-    
+    puts "key_name = #{key_name}"
   end
   
 end
