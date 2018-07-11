@@ -3,6 +3,7 @@ def get_first_name_of_season_winner(data, season)
   # Use string manipulation to get first name
   data_key_array = data.keys
   puts "data keys = #{data_key_array}"
+  
 end
 
 def get_contestant_name(data, occupation)
