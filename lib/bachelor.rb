@@ -31,13 +31,14 @@ end #end get_first_name_of_season_winner
 
 def get_contestant_name(data, occupation)
   # Returns the name of the woman who has occupation
-  
+  data_keys = data.keys
+  puts "data_keys = #{data_keys}"
   contestant_name = ""
-    data.each do | key_name, key_value |
+    data[season].each do | key_name, key_value |
     puts "==================================="
     puts "key_name = #{key_name}"
-    if key_value[i].has_value?(occupation)
-      key_value[i].each do | key_name2, key_value2|
+    if key_name.has_value?(occupation)
+      key_name.each do | key_name2, key_value2|
         if key_name2 == "name"
           contestant_name = key_value2
           puts "===> name w/occupation = #{contestant_name}"
